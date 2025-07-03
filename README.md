@@ -41,7 +41,8 @@ Enhances Model 2 by:
 
 ## 🧭 Architecture Diagram
 
-![Architecture Diagram](Dynamic-Parking-Pricing-System-Capstone-Project/Architecture%20Diagram.png)
+![Architecture Diagram](architecture_diagram.png)
+
 
 
 
