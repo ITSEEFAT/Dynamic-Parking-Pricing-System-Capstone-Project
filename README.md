@@ -69,6 +69,53 @@ Example contents:
 
 ✅ Integration into further dashboards or APIs
 
+🧭 Project Architecture & Workflow
+This capstone project implements a Dynamic Parking Pricing System that leverages real-time data processing, model-based pricing strategies, and live visualization. Below is the detailed architecture and step-by-step workflow.
+
+📦 1. Data Source
+File: dataset.csv
+
+The dataset includes parking lot metadata and dynamic attributes such as:
+
+Occupancy, Capacity, VehicleType
+
+TrafficConditionNearby, QueueLength
+
+IsSpecialDay, Timestamp
+
+🔄 2. Real-Time Streaming Engine (Pathway)
+We use Pathway to stream and process data dynamically:
+
+Reads the CSV data in streaming mode
+
+Applies user-defined pricing models (Model 1, Model 2, Model 3)
+
+Continuously updates results in memory and writes to disk (output.jsonl)
+
+🧠 3. Pricing Models
+Model	Strategy	Key Logic
+M1	Baseline Flat Pricing	Fixed price irrespective of dynamic data
+M2	Demand-Based Pricing	Increases price with occupancy, queue, traffic, etc.
+M3	Competitive Pricing	Compares current lot with nearby lots to offer competitive pricing
+
+⚙️ 4. UDF Integration in Pathway
+Each pricing model is implemented using Pathway UDFs (@pw.udf) and applied to the live stream:
+
+baseline_model(row) → Model 1
+
+demand_model(row) → Model 2
+
+competitive_model(row, table) → Model 3
+
+📤 5. Output & Storage
+Final predictions (Model1Price, Model2Price, Model3Price) are written to a streaming JSON Lines file:
+
+File: output.jsonl
+
+Updated every second with new rows
+
+Can be ingested by other systems (dashboards, APIs)
+
 
 ## 🧭 Architecture Diagram
 
