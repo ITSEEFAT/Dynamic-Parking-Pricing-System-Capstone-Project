@@ -39,7 +39,6 @@ Enhances Model 2 by:
 
 ---
 
-
 📄 Output File: output.jsonl
 
 
@@ -116,8 +115,8 @@ Updated every second with new rows
 
 Can be ingested by other systems (dashboards, APIs)
 
-
 ## 🧭 Architecture Diagram
+
 
 ![Architecture Diagram](architecture_diagram.png)
 
@@ -131,6 +130,10 @@ Can be ingested by other systems (dashboards, APIs)
 - Plots update every 2 seconds over a window (e.g., 30 seconds).
 
 ---
+## 🧭 Architecture Diagram
+
+![Architecture Diagram]("C:\Users\seefa\OneDrive\Desktop\summer analyst\ChatGPT Image Jul 4, 2025, 01_22_21 AM.png")
+
 
 ## 📝 Instructions to Run
 
