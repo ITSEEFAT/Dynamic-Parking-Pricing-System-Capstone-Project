@@ -41,18 +41,8 @@ Enhances Model 2 by:
 
 ## 🧭 Architecture Diagram
 
-```mermaid
-flowchart TD
-    A[CSV Input File: dataset.csv] --> B[Pathway Streaming Engine]
-    B --> C[Model 1 - Baseline]
-    B --> D[Model 2 - Demand-Based]
-    B --> E[Model 3 - Competitive]
-    C --> F[Price Output (JSONL)]
-    D --> F
-    E --> F
-    F --> G[Bokeh Visualization Dashboard]
+![Architecture Diagram](Architecture Diagram.png)
 
----
 
 ## 📊 Visualization
 
@@ -61,9 +51,6 @@ flowchart TD
 - Plots update every 2 seconds over a window (e.g., 30 seconds).
 
 ---
-## 🧭 Architecture Diagram
-
-![Architecture Diagram](Architecture Diagram.png)
 
 ## 📝 Instructions to Run
 
