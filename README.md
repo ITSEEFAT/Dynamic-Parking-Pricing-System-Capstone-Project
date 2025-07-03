@@ -68,8 +68,18 @@ Example contents:
 
 ✅ Integration into further dashboards or APIs
 
-🧭 Project Architecture & Workflow
+
+
+
+
+
+
+🧭 Project Architecture & Workflow  
 This capstone project implements a Dynamic Parking Pricing System that leverages real-time data processing, model-based pricing strategies, and live visualization. Below is the detailed architecture and step-by-step workflow.
+
+
+
+
 
 📦 1. Data Source
 File: dataset.csv
@@ -130,9 +140,6 @@ Can be ingested by other systems (dashboards, APIs)
 - Plots update every 2 seconds over a window (e.g., 30 seconds).
 
 ---
-## 🧭 Architecture Diagram
-
-![Architecture Diagram]("C:\Users\seefa\OneDrive\Desktop\summer analyst\ChatGPT Image Jul 4, 2025, 01_22_21 AM.png")
 
 
 ## 📝 Instructions to Run
