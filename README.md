@@ -52,7 +52,6 @@ flowchart TD
     E --> F
     F --> G[Bokeh Visualization Dashboard]
 
-
 ---
 
 ## 📊 Visualization
@@ -62,6 +61,9 @@ flowchart TD
 - Plots update every 2 seconds over a window (e.g., 30 seconds).
 
 ---
+## 🧭 Architecture Diagram
+
+![Architecture Diagram](Architecture Diagram.png)
 
 ## 📝 Instructions to Run
 
