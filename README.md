@@ -47,9 +47,11 @@ flowchart TD
     B --> C[Model 1 - Baseline]
     B --> D[Model 2 - Demand-Based]
     B --> E[Model 3 - Competitive]
-    C & D & E --> F[Price Output (JSONL)]
+    C --> F[Price Output (JSONL)]
+    D --> F
+    E --> F
     F --> G[Bokeh Visualization Dashboard]
-```
+
 
 ---
 
